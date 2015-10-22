@@ -49,6 +49,8 @@ del User
 @login_manager.user_loader
 def load_user(userid):
     session = settings.Session()
+    if userid == "None":
+        userid = None
     user = session.query(models.User).filter(models.User.id == userid).first()
     session.expunge_all()
     session.commit()
