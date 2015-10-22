@@ -10,6 +10,10 @@
     "AIRFLOW_SECRET_KEY": {
       "description": "A secret key to verify the integrity of signed cookies",
       "generator": "secret"
+    },
+    "PYTHONPATH": {
+      "description": "Path for python",
+      "value": "/app"
     }
   },
   "scripts": {
