@@ -12,6 +12,9 @@
       "generator": "secret"
     }
   },
+  "scripts": {
+    "postdeploy": "init_env"
+  },
   "addons": [
     "heroku-postgresql",
     "heroku-redis",
