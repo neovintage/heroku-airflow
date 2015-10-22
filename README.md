@@ -17,7 +17,8 @@ Heroku Button. Once deployed there are a few caveats:
 * When you're ready to start deploying workflows, you'll need to switch the
   executor to `CeleryExecutor` in `airflow.cfg`. The Procfile will need to
   change to include a scheduler and worker task like so:
-  ```
+
+```
 web: airflow webserver -p $PORT
 worker: airflow worker
 scheduler: airflow scheduler
