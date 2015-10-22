@@ -5,7 +5,7 @@
   "env": {
     "AIRFLOW_HOME": {
       "description": "Where all the information for airflow lives",
-      "value": "/app/user"
+      "value": "/app"
     },
     "AIRFLOW_SECRET_KEY": {
       "description": "A secret key to verify the integrity of signed cookies",
@@ -13,11 +13,14 @@
     }
   },
   "scripts": {
-    "postdeploy": "init_env"
+    "postdeploy": "./init_env"
   },
   "addons": [
     "heroku-postgresql",
     "heroku-redis",
     "mailgun:starter"
+  ],
+  "buildpacks": [
+    { "url": "https://github.com/kennethreitz/conda-buildpack" }
   ]
 }
