@@ -1,4 +1,4 @@
 psycopg2
--e git://github.com/airbnb/airflow@ba35124d75a3ad23266c324d729e80d5267e161f#egg=airflow[postgres,crypto]
+airflow[postgres,crypto,password] == 1.7.1.3
 rauth
 flask-sslify
