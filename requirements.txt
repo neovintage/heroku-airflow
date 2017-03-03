@@ -1,4 +1,5 @@
 psycopg2
-airflow[postgres,crypto,password] == 1.7.1.3
+celery[redis]
+airflow[postgres,crypto,password,celery] == 1.7.1.3
 rauth
 flask-sslify
